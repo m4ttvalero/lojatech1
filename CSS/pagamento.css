@@ -1,4 +1,17 @@
-﻿@charset "UTF-8";
+@charset "UTF-8";
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+html, body {
+    max-width: 100%;
+    overflow-x: clip;
+}
+
+img {
+    max-width: 100%;
+}
+
 
 /* celular */
 @media (max-width: 600px) {
@@ -84,6 +97,14 @@
     color: #d62828;
 }
 
+@media (max-width: 600px) {
+    .barra-superior { padding: 8px 10px; }
+    .logo, .logo img { width: 36px; height: 36px; }
+    .logo { flex: 0 0 36px; }
+    .menu { gap: 10px; flex-wrap: nowrap; margin-left: 0; }
+    .menu a { font-size: clamp(0.7rem, 3.2vw, 0.9rem); letter-spacing: 0; white-space: nowrap; }
+}
+
 .pagamento-page {
     padding: 40px 20px 70px;
 }
@@ -139,6 +160,7 @@
 }
 
 .produto-info-pagamento {
+    min-width: 0;
     flex: 1;
 }
 

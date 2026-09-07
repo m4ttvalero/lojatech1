@@ -1,4 +1,17 @@
 @charset "UTF-8";
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+html, body {
+    max-width: 100%;
+    overflow-x: clip;
+}
+
+img {
+    max-width: 100%;
+}
+
 
 /* celular */
 @media (max-width: 600px) {
