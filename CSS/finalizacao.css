@@ -1,0 +1,222 @@
+@charset "UTF-8";
+
+/* celular */
+@media (max-width: 600px) {
+    body {
+        font-size: 14px;
+    }
+}
+
+/* tablet */
+@media (min-width: 601px) and (max-width: 1024px) {
+    body {
+        font-size: 16px;
+    }
+}
+
+/* notebook e pc */
+@media (min-width: 1025px) {
+    body {
+        font-size: 18px;
+    }
+}
+.rodape {
+    background-color: #111;
+    color: #fff;
+    text-align: center;
+    padding: 20px 15px;
+    margin-top: 30px;
+    font-size: 1rem;
+    border-radius: 18px;
+}
+
+.rodape p {
+    margin: 0;
+}
+
+.finalizacao {
+    max-width: 900px;
+    margin: 80px auto;
+    padding: 30px;
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 22px;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08); 
+}
+
+.finalizacao h1,
+.finalizacao h2 {
+    margin-top: 0;
+}
+
+.produto-finalizacao {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    padding: 20px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+.produto-finalizacao img {
+    width: 150px;
+    height: 150px;
+    object-fit: contain;
+    background: #f7f7f7;
+    border-radius: 12px;
+}
+
+.produto-finalizacao h2 {
+    margin-bottom: 10px;
+}
+
+.produto-finalizacao p {
+    margin: 8px 0;
+}
+
+.preco-finalizacao {
+    color: #d62828;
+    font-weight: 700;
+}
+
+.prazo-entrega {
+    margin: 22px 0;
+    font-weight: 700;
+}
+
+.formulario-finalizacao {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 16px;
+    padding-top: 24px;
+    border-top: 1px solid #ddd;
+}
+
+.formulario-finalizacao h2,
+.formulario-finalizacao .acoes-finalizacao {
+    grid-column: 1 / -1;
+}
+
+.dados-ficticios,
+.formulario-finalizacao > #mensagem-finalizacao-formulario {
+    grid-column: 1 / -1;
+}
+
+.dados-ficticios {
+    margin: -8px 0 0;
+    color: #777;
+    font-size: 0.9rem;
+    font-style: italic;
+}
+
+.formulario-finalizacao label {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+    text-align: left;
+    font-weight: 700;
+}
+
+.formulario-finalizacao input {
+    padding: 12px;
+    border: 1px solid #bbb;
+    border-radius: 8px;
+    font: inherit;
+}
+
+.formulario-finalizacao input::placeholder {
+    color: #888;
+    opacity: 1;
+}
+
+.mensagem-erro {
+    margin: 16px 0 0;
+    color: #b00020;
+    font-weight: bold;
+    text-align: center;
+}
+
+.acoes-finalizacao {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+}
+
+.btn-finalizar-pedido {
+    padding: 14px 28px;
+    background-color: #111;
+    color: #fff;
+    font: inherit;
+    font-weight: 700;
+    border: 2px solid #111;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.btn-finalizar-pedido:hover,
+.finalizacao .btn-inicio:hover {
+    background-color: #fff;
+    color: #111;
+}
+
+.btn-cancelar {
+    padding: 14px 28px;
+    background-color: #b00020;
+    color: #fff;
+    font-weight: 700;
+    text-decoration: none;
+    border: 2px solid #b00020;
+    border-radius: 10px;
+    transition: 0.3s ease;
+}
+
+.btn-cancelar:hover {
+    background-color: #fff;
+    color: #b00020;
+}
+
+.mensagem-finalizacao {
+    text-align: center;
+    padding: 30px;
+}
+
+.mensagem-finalizacao p {
+    margin-bottom: 30px;
+}
+
+.finalizacao .btn-inicio {
+    display: inline-block;
+    padding: 14px 28px;
+    background-color: #111;
+    color: #fff;
+    font-weight: 700;
+    text-decoration: none;
+    border-radius: 10px;
+    border: 2px solid #111;
+    transition: 0.3s ease;
+}
+
+@media (max-width: 650px) {
+    .finalizacao {
+        margin: 30px 15px;
+        padding: 22px;
+    }
+
+    .produto-finalizacao {
+        align-items: flex-start;
+    }
+
+    .produto-finalizacao img {
+        width: 100px;
+        height: 100px;
+    }
+
+    .formulario-finalizacao {
+        grid-template-columns: 1fr;
+    }
+
+    .acoes-finalizacao {
+        flex-direction: column;
+    }
+}

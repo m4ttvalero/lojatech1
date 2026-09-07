@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../CSS/pagamento.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagamento</title>
+</head>
+<body>
+    <div class="barra-superior">
+        <a href="../HTML/home.html" class="logo" aria-label="Voltar ao início">
+            <img src="../IMG's/logo/logo.png" alt="Logo da LojaTech">
+        </a>
+
+        <div class="menu">
+            <a href="../HTML/home.html">Início</a>
+            <a href="../HTML/produtos.html">Produtos</a>
+            <a href="../HTML/contato.html">Contato</a>
+            <a href="../HTML/sobre.html">Sobre Nós</a>
+        </div>
+    </div>
+
+    <main class="pagamento-page">
+        <a href="../HTML/produtos.html" class="btn-voltar">Voltar aos produtos</a>
+
+        <section class="resumo-produto" aria-labelledby="titulo-produto-pagamento">
+            <img id="imagem-produto-pagamento" class="produto-imagem-pagamento" src="" alt="">
+            <div class="produto-info-pagamento">
+                <h1 id="titulo-produto-pagamento">Produto selecionado</h1>
+                <p id="descricao-produto-pagamento" class="produto-descricao-pagamento"></p>
+                <p id="preco-produto-pagamento" class="produto-preco-pagamento"></p>
+            </div>
+        </section>
+
+        <section class="metodos-pagamento" aria-labelledby="titulo-metodos">
+            <h2 id="titulo-metodos">Métodos de pagamento</h2>
+            <div class="opcoes-pagamento">
+                <label class="opcao-pagamento">
+                    <input type="radio" name="metodo-pagamento" value="pix">
+                    <span>Pix</span>
+                </label>
+                <label class="opcao-pagamento">
+                    <input type="radio" name="metodo-pagamento" value="debito">
+                    <span>Débito</span>
+                </label>
+                <label class="opcao-pagamento">
+                    <input type="radio" name="metodo-pagamento" value="credito">
+                    <span>Crédito</span>
+                </label>
+            </div>
+
+            <div id="detalhes-pagamento" class="detalhes-pagamento" hidden>
+                <p id="desconto-pagamento" class="desconto-pagamento"></p>
+                <label id="parcelas-container" class="parcelas-container" hidden>
+                    Parcelas
+                    <select id="parcelas-pagamento" name="parcelas"></select>
+                </label>
+                <p id="total-pagamento" class="total-pagamento"></p>
+                <a href="../HTML/finalizacao.html" id="btn-finalizar-compra" class="btn-finalizar-compra">Finalizar compra</a>
+            </div>
+        </section>
+    </main>
+
+    <script src="../JS/script.js"></script>
+
+    <div class="rodape">
+        <p>&copy; 2026 LojaTech. Todos os direitos reservados.</p>
+    </div>
+</body>
+</html>

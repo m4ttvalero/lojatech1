@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../CSS/finalizacao.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Finalização da compra</title>
+</head>
+<body>
+    <main class="finalizacao">
+        <section id="resumo-finalizacao" class="resumo-finalizacao" aria-labelledby="titulo-resumo-finalizacao">
+            <h1 id="titulo-resumo-finalizacao">Revise sua compra</h1>
+            <div class="produto-finalizacao">
+                <img id="imagem-finalizacao" src="" alt="">
+                <div>
+                    <h2 id="nome-finalizacao">Produto</h2>
+                    <p id="descricao-finalizacao"></p>
+                    <p id="preco-finalizacao" class="preco-finalizacao"></p>
+                    <p><strong>Pagamento:</strong> <span id="metodo-finalizacao"></span></p>
+                    <p id="parcelas-finalizacao"></p>
+                    <p><strong id="total-finalizacao"></strong></p>
+                </div>
+            </div>
+            <p id="prazo-entrega" class="prazo-entrega"></p>
+
+            <form id="formulario-finalizacao" class="formulario-finalizacao" novalidate>
+                <h2>Dados para entrega</h2>
+                <p class="dados-ficticios">Dados Fictícios</p>
+                <label>Nome completo<input type="text" name="nome-completo" placeholder="Dados Fictícios" required></label>
+                <label>CEP<input type="text" name="cep" inputmode="numeric" pattern="[0-9]{5}-?[0-9]{3}" placeholder="Dados Fictícios" required></label>
+                <label>Telefone<input type="tel" name="telefone" placeholder="Dados Fictícios" required></label>
+                <label>Nº casa ou apartamento<input type="text" name="numero" placeholder="Dados Fictícios" required></label>
+                <label>Complemento (Opcional)<input type="text" name="complemento" placeholder="Dados Fictícios"></label>
+                <div class="acoes-finalizacao">
+                    <a href="../HTML/produtos.html" class="btn-cancelar">Cancelar</a>
+                    <button type="submit" class="btn-finalizar-pedido">Finalizar compra</button>
+                </div>
+                <p id="mensagem-finalizacao-formulario" role="status" aria-live="polite"></p>
+            </form>
+        </section>
+
+        <section id="mensagem-finalizacao" class="mensagem-finalizacao" hidden>
+            <h1>Compra finalizada!</h1>
+            <p>Obrigado por escolher a LojaTech. Seu pedido foi registrado com sucesso.</p>
+            <a href="../HTML/home.html" class="btn-inicio">Voltar ao início</a>
+        </section>
+    </main>
+
+    <script src="../JS/script.js"></script>
+
+    <div class="rodape">
+        <p>&copy; 2026 LojaTech. Todos os direitos reservados.</p>
+    </div>
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../CSS/contato.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato</title>
+</head>
+<body>
+    <div class="barra-superior">
+        <a href="../HTML/home.html" class="logo" aria-label="Voltar ao início">
+            <img src="../IMG's/logo/logo.png" alt="Logo da LojaTech">
+        </a>
+
+        <div class="menu">
+            <a href="../HTML/home.html">Início</a>
+            <a href="../HTML/produtos.html">Produtos</a>
+            <a href="../HTML/contato.html">Contato</a>
+            <a href="../HTML/sobre.html">Sobre Nós</a>
+        </div>
+    </div>
+
+    <div class="formulariodecontato">
+        <h1>Entre em contato conosco!</h1>
+        <ul>
+            <li>Email: contato@lojatech.com</li>
+            <li>Telefone: (11) 1234-5678</li>
+            <li>Endereço: Rua Exemplo, 123 - São Paulo/SP</li>
+        </ul>
+        <h3><p>Ou preencha o formulário abaixo e entraremos em contato com você o mais breve possível:</p></h3>
+        <form id="formulario-contato" novalidate>
+            <h3><label for="nome">Nome:</label></h3>
+            <input type="text" id="nome" name="nome" required>
+            <h3><label for="email">Email:</label></h3>
+            <input type="email" id="email" name="email" required>
+            <h3><label for="mensagem">Mensagem:</label></h3>
+            <textarea id="mensagem" name="mensagem" rows="5" required></textarea>
+            <button class="btn-enviar" type="submit">Enviar</button>
+            <p id="mensagem-formulario" role="status" aria-live="polite"></p>
+            <p id="mensagem-carregamento" class="mensagem-carregamento" role="status" aria-live="polite">Aguarde ser redirecionado a tela inicial</p>
+        </form>
+    </div>
+
+    <script src="../JS/script.js"></script>
+
+    <div class="rodape">
+        <p>&copy; 2026 LojaTech. Todos os direitos reservados.</p>
+    </div>
+</body>
+</html>
