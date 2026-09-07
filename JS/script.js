@@ -251,7 +251,7 @@ if (formularioContato && mensagemFormulario && mensagemCarregamento) {
 
 		// Depois do tempo de carregamento, retorna para a página inicial.
 		setTimeout(() => {
-			window.location.href = '../HTML/home.html';
+			window.location.href = '../HTML/index.html';
 		}, 4500);
 	});
 }
@@ -262,7 +262,7 @@ if (formularioContato && mensagemFormulario && mensagemCarregamento) {
 document.querySelectorAll('a.produto-card, a.produto').forEach((link) => {
 	link.addEventListener('click', () => {
 		sessionStorage.setItem(scrollKey, String(window.scrollY));
-		sessionStorage.setItem(returnPageKey, window.location.pathname.endsWith('/home.html') ? 'home.html' : 'produtos.html');
+			sessionStorage.setItem(returnPageKey, window.location.pathname.endsWith('/index.html') ? 'index.html' : 'produtos.html');
 	});
 });
 
@@ -288,7 +288,7 @@ document.querySelectorAll('a.btn-cancelar').forEach((link) => {
 
 // Identifica a página atual para restaurar a posição somente no catálogo ou na home.
 const currentPage = window.location.pathname.split('/').pop();
-if (currentPage === 'home.html' || currentPage === 'produtos.html') {
+if (currentPage === 'index.html' || currentPage === 'produtos.html') {
 	// Recupera a posição salva antes de abrir o produto.
 	const savedScroll = sessionStorage.getItem(scrollKey);
 
