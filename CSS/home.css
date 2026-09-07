@@ -101,7 +101,10 @@ img {
 
 .banner {
     width: 100%;
+    max-width: 1100px;
     margin-top: 18px;
+    margin-left: auto;
+    margin-right: auto;
     display: block;
     overflow: hidden;
 }
@@ -163,6 +166,12 @@ img {
 }
 
 @media (max-width: 600px) {
+    .produtos {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 900px) {
     .produtos {
         grid-template-columns: 1fr;
     }
