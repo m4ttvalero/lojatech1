@@ -133,10 +133,13 @@ img {
 
 .bannersobre {
     width: 100%;
-    height: auto;
+    margin-top: 20px;
+    padding: 0 clamp(12px, 4vw, 48px);
     display: flex;
     justify-content: center;
-    margin-top: 20px;
+    overflow: hidden;
+    background: #071426;
+    border-radius: 18px;
 }
 
 .bannersobre img {
@@ -144,6 +147,7 @@ img {
     max-width: 1200px;
     height: auto;
     border-radius: 10px;
+    display: block;
 }
 
 .nossahistoria {
