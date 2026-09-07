@@ -101,21 +101,25 @@ img {
 
 .banner {
     width: 100%;
-    max-width: 900px;
+    max-width: none;
     margin-top: 18px;
     margin-left: auto;
     margin-right: auto;
+    padding: 0 clamp(12px, 4vw, 48px);
     display: block;
     overflow: hidden;
+    background: #000;
+    border-radius: 18px;
 }
 
 .banner img {
     width: 100%;
+    max-width: 900px;
     height: auto;
-    max-width: 100%;
     object-fit: contain;
     border-radius: 18px;
     display: block;
+    margin: 0 auto;
 }
 
 .conteudo {
